@@ -1,18 +1,47 @@
-git branch -c modify_module_pedidos
-git switch modify_module_pedidos
 
-    producto
-    direccion
-    nombre del usuario
-    metodo de pago
-    pago 
-    telefono
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Pedidos</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
 
-git status
-git add .
-git commit -m "modify_module_pedidos: Add inputs and styles"
-git push
+    <div class="form-container">
 
-git switch main 
-git merge modify_module_pedidos
-git push
+        <h1>Módulo Pedidos</h1>
+
+        <form>
+
+            <label> Producto</label>
+            <input type="text">
+
+            <label>Descripción Producto</label>
+            <textarea></textarea>
+
+            <label>Nombre del usuario</label>
+            <input type="number">
+
+            <label> Método de pago</label>
+            <input type="text">
+
+            <label>Pago</label>
+            <input type="text">
+
+            <label>telefono</label>
+            <input type="text">
+
+            <button type="submit">Guardar Plato</button>
+
+        </form>
+
+        <a href="../index.html">
+            <button>Volver</button>
+        </a>
+
+    </div>
+
+</body>
+</html>

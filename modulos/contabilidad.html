@@ -1,17 +1,42 @@
-git branch -c modify_module_comtabilida
-git switch modify_module_comtabilida
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Contabilidad</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
 
-   ingresos
-   egresos
-   concepto
-   fecha 
+    <div class="form-container">
 
-git status
-git add . 
-git commit -m "modify_module_comtabilidad" : Add inputs and styles"
-git push 
+        <h1>Módulo Contabilidad</h1>
 
-git switch main 
-git merge modify_module_comtabilida
-git push
+        <form>
+
+            <label>ingresos</label>
+            <input type="text">
+
+            <label>egresos</label>
+            <input type="text">
+
+            <label>concepto</label>
+            <input type="text">
+
+            <label>fecha</label>
+            <input type="date">
+
+            <button type="submit">Guardar Registro</button>
+           
+
+        </form>
+
+        <a href="../index.html">
+            <button>Volver</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
