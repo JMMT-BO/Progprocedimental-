@@ -86,3 +86,45 @@ button{
 button:hover{
     background-color: #555;
 }
+
+ .about-container{
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .about-container h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-container p{
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .values{
+            margin-top: 30px;
+        }
+
+        .values h2{
+            margin-bottom: 15px;
+        }
+
+        .values ul{
+            padding-left: 20px;
+        }
+
+        .values li{
+            margin-bottom: 10px;
+        }
+
+        .btn-home{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
