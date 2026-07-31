@@ -79,7 +79,7 @@ function ValidarInformacion() {
 
     // Concepto
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(Concepto)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(Concepto)) {
 
         Swal.fire({
             icon: "error",

@@ -49,7 +49,7 @@ function ValidarInformacion() {
 
     // Nombre del Producto
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(nombre_prodt)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(nombre_prodt)) {
 
         Swal.fire({
             icon: "error",
@@ -61,7 +61,7 @@ function ValidarInformacion() {
 
     // Nombre del Usuario
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(nombre_usur)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(nombre_usur)) {
 
         Swal.fire({
             icon: "error",
@@ -97,7 +97,7 @@ function ValidarInformacion() {
 
     // Método de Pago
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(metodo_pago)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(metodo_pago)) {
 
         Swal.fire({
             icon: "error",

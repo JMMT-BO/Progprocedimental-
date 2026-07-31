@@ -42,7 +42,7 @@ function ValidarInformacion() {
 
     // Nombre (solo letras)
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(nombre_prodt)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(nombre_prodt)) {
 
         Swal.fire({
             icon: "error",
@@ -54,7 +54,7 @@ function ValidarInformacion() {
 
     // Marca (solo letras)
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(marca_prodct)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(marca_prodct)) {
 
         Swal.fire({
             icon: "error",
@@ -90,7 +90,7 @@ function ValidarInformacion() {
 
     // Categoría (solo letras)
 
-    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(categoria)) {
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$/.test(categoria)) {
 
         Swal.fire({
             icon: "error",
