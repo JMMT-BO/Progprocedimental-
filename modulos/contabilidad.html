@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulo Contabilidad</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
 
     <div class="form-container">
 
         <h1>Módulo Contabilidad</h1>
 
-        <form>
+        <div class="formulario">
 
-            <label>ingresos</label>
-            <input type="text">
+            <label for="Ventas">Ventas</label>
+            <input type="number" id="Ventas" name="Ventas">
 
-            <label>egresos</label>
-            <input type="text">
+            <label for="Ingresos">Ingresos</label>
+            <input type="number" id="Ingresos" name="Ingresos">
 
-            <label>concepto</label>
-            <input type="text">
+            <label for="Egresos">Egresos</label>
+            <input type="number" id="Egresos" name="Egresos">
 
-            <label>fecha</label>
-            <input type="date">
+            <label for="Concepto">Concepto</label>
+            <input type="text" id="Concepto" name="Concepto">
 
-            <button type="button">Guardar Registro</button>
-           
+            <label for="Fecha">Fecha</label>
+            <input type="date" id="Fecha" name="Fecha">
 
+            <label for="Valor">Valor</label>
+            <input type="number" id="Valor" name="Valor">
 
-        </form>
+            <button id="btnGuardar" type="button">
+                Guardar Registro
+            </button>
+
+        </div>
 
         <a href="../index.html">
-            <button>Volver</button>
+            <button type="button">Volver</button>
         </a>
 
     </div>
-<script src="../jss/contabilida.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../jss/contabilidad.js"></script>
+
 </body>
+
 </html>

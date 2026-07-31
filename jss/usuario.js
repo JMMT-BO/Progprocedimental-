@@ -1,7 +1,7 @@
 function ValidarInformacion() {
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
-    let tipo_documento = document.getElementById("nombre_prodt").value;
+    let tipo_documento = document.getElementById("tipo_documento").value;
     let numero_documento= document.getElementById("numero_documento").value;
     let telefono = document.getElementById("telefono").value;
     let email= document.getElementById("email").value;
@@ -32,7 +32,7 @@ function ValidarInformacion() {
             p${contraseña}`
         );
         if (!/^[a-zA-Z]+$/.test(nombre)) {
-            console.log("Categoria debe contener letras")
+            console.log("Nombre debe contener letras")
             Swal.fire({
                 title: "Categoria debe contener letras",
                 icon: "error"
@@ -40,41 +40,41 @@ function ValidarInformacion() {
             return;
         }
         if (!/^[a-zA-Z]+$/.test(apellido)) {
-            console.log("Categoria debe contener letras")
+            console.log("Apellido debe contener letras")
             Swal.fire({
-                title: "Categoria debe contener letras",
+                title: "Apellido debe contener letras",
                 icon: "error"
             });
             return;
         }
         if (!/^[a-zA-Z]+$/.test(cargo)) {
-            console.log("Categoria debe contener letras")
+            console.log("Cargo debe contener letras")
             Swal.fire({
-                title: "Categoria debe contener letras",
+                title: "Cargo debe contener letras",
                 icon: "error"
             });
             return;
         }
         if (!/^[a-zA-Z]+$/.test(genero)) {
-            console.log("Categoria debe contener letras")
+            console.log("Genero debe contener letras")
             Swal.fire({
-                title: "Categoria debe contener letras",
+                title: "Genero debe contener letras",
                 icon: "error"
             });
             return;
             
         }
         if (!/^[a-zA-Z]+$/.test(tipo_documento)) {
-            console.log("Categoria debe contener letras")
+            console.log("tipo_documento debe contener letras")
             Swal.fire({
-                title: "Categoria debe contener letras",
+                title: "tipo_documento debe contener letras",
                 icon: "error"
             });
             return;
         }     
         if (!/^\d+$/.test(numero_documento)) {
             Swal.fire({
-                 title: "Codigo del producto debe contener números",
+                 title: "numero_documento debe contener números",
                 icon: "error"
             });
             return;
@@ -82,7 +82,7 @@ function ValidarInformacion() {
         }    
         if (!/^\d+$/.test(telefono)) {
             Swal.fire({
-                 title: "Codigo del producto debe contener números",
+                 title: "Telefono debe contener números",
                 icon: "error"
             });
             return;
@@ -90,20 +90,22 @@ function ValidarInformacion() {
         }       
         if (!/^\d+$/.test(fecha_nacimineto)) {
             Swal.fire({
-                 title: "Codigo del producto debe contener números",
+                 title: "fecha_nacimineto debe contener letr",
                 icon: "error"
             });
             return;
+        }
+
             Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Informacion Guardada Correctamente",
-        showConfirmButton: false,
-        timer: 1500,
+            position: "top-end",
+            icon: "success",
+            title: "Informacion Guardada Correctamente",
+            showConfirmButton: false,
+            timer: 1500,
       });
     }
   }
-}
+
 document.getElementById("btnGuardar").onclick = ValidarInformacion;
 
               
